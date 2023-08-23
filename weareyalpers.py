@@ -155,6 +155,9 @@ fi''')
         os.system(f"xdg-mime default yalpwithnewinstaller.desktop x-scheme-handler/yalp")
 
         WackyLogging.Success("Yalp installed successfully! Verify this by attempting to join a game.")
+    elif choice == "2":
+        WackyLogging.Error("I'm too lazy to add that.")
+        exit(0)
     else:
         os.system("clear")
         WackyLogging.Info("Exiting")
