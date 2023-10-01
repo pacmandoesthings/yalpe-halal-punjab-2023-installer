@@ -119,7 +119,7 @@ def main():
         yalp_dir = os.path.expanduser("~/.thatisallweareyalpers/")
         os.makedirs(yalp_dir, exist_ok=True)
         os.chdir(yalp_dir)
-        os.system("curl https://cdn.discordapp.com/attachments/1152330589735759972/1157955824635891812/installer.exe?ex=651a7de6&is=65192c66&hm=5485b95080c8e20d373e0829d2a78b63bc9864ff81382ce9e83d962ee49337cf& -o installer.exe")
+        os.system("curl https://cdn.discordapp.com/attachments/1152330589735759972/1157955824635891812/installer.exe -o installer.exe")
         os.system("WINEDEBUG=-all wine64 installer.exe")
         WackyLogging.Info("Now installing URI...")
 
