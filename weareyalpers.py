@@ -2,7 +2,12 @@
 import os
 import subprocess
 import time
-from colorama import Fore, Back, init
+try:
+    from colorama import Fore, Back, init
+except:
+    os.system("pip install colorama")
+    print("Rerun script please.")
+    os.exit(1)
 
 """
 made by pacmandev
@@ -114,7 +119,7 @@ def main():
         yalp_dir = os.path.expanduser("~/.thatisallweareyalpers/")
         os.makedirs(yalp_dir, exist_ok=True)
         os.chdir(yalp_dir)
-        os.system("curl https://cdn.discordapp.com/attachments/1128010629135994930/1143951238766022756/YalpInstaller.exe -o installer.exe")
+        os.system("curl https://cdn.discordapp.com/attachments/1152330589735759972/1157955824635891812/installer.exe?ex=651a7de6&is=65192c66&hm=5485b95080c8e20d373e0829d2a78b63bc9864ff81382ce9e83d962ee49337cf& -o installer.exe")
         os.system("WINEDEBUG=-all wine64 installer.exe")
         WackyLogging.Info("Now installing URI...")
 
