@@ -7,7 +7,7 @@ try:
 except:
     os.system("pip install colorama")
     print("Rerun script please.")
-    os.exit(1)
+    exit(1)
 
 """
 made by pacmandev
