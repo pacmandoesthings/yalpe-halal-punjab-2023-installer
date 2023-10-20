@@ -5,7 +5,7 @@ import time
 try:
     from colorama import Fore, Back, init
 except:
-    os.system("pip install colorama")
+    os.system("python3 -m pip install colorama")
     print("Rerun script please.")
     exit(1)
 
